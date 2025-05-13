@@ -1,0 +1,230 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #e0f7fa, #fce4ec);
+    min-height: 100vh;
+    padding: 20px;
+    color: #333;
+  }
+  
+  
+  header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  header h1 {
+    font-size: 2.8rem;
+    color: #2c3e50;
+  }
+  
+  header p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 8px;
+  }
+  
+  
+  .form-section {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: 0 auto 30px;
+  }
+  
+  .form-group {
+    margin-bottom: 18px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #2c3e50;
+  }
+  
+  input[type="text"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: #fdfdfd;
+    transition: border-color 0.3s;
+  }
+  
+  input:focus,
+  select:focus,
+  textarea:focus {
+    border-color: #3498db;
+    outline: none;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  button[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #2980b9;
+  }
+  
+  
+  .filter-section {
+    max-width: 700px;
+    margin: 0 auto 20px;
+    text-align: right;
+  }
+  
+  .filter-section label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .filter-section select {
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  
+  .skills-display {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .skills-display h2 {
+    margin-bottom: 12px;
+    color: #2c3e50;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  
+  .skill-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    padding: 10px;
+  }
+  
+  
+  .skill-card {
+    background: #ffffff;
+    border-left: 5px solid #3498db;
+    border-radius: 12px;
+    padding: 16px 20px;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .skill-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .skill-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #2c3e50;
+  }
+  
+  .skill-card p {
+    margin-bottom: 6px;
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  .skill-card small {
+    font-size: 0.8rem;
+    color: #888;
+  }
+  
+  
+  .skill-card.Beginner {
+    border-left-color: #2ecc71;
+  }
+  
+  .skill-card.Intermediate {
+    border-left-color: #f39c12;
+  }
+  
+  .skill-card.Advanced {
+    border-left-color: #e74c3c;
+  }
+  
+  
+  .card-buttons {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    display: flex;
+    gap: 6px;
+  }
+  
+  .card-buttons button {
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: #555;
+  }
+  
+  .card-buttons button:hover {
+    color: #e74c3c;
+    transform: scale(1.2);
+  }
+  
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2.2rem;
+    }
+  
+    .form-section,
+    .filter-section {
+      padding: 15px;
+    }
+  
+    button[type="submit"] {
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .filter-section {
+      text-align: left;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .skill-card {
+      padding: 14px;
+    }
+  
+    .card-buttons {
+      flex-direction: row;
+      position: static;
+      margin-top: 10px;
+    }
+  }
+  

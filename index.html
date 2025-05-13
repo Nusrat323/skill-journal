@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skill Journal</title>
+  <link rel="stylesheet" href="style.css">
+ 
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+  <header>
+    <h1>📘 Skill Journal</h1>
+    <p>Track your learning progress and grow your skills!</p>
+  </header>
+
+  <main>
+    
+    <section class="form-section">
+      <form id="skill-form">
+        <div class="form-group">
+          <label for="skill">Skill Name</label>
+          <input type="text" id="skill"  required>
+        </div>
+        <div class="form-group">
+          <label for="level">Skill Level</label>
+          <select id="level">
+            <option value="Beginner">Beginner 👶</option>
+            <option value="Intermediate">Intermediate ⚙️</option>
+            <option value="Advanced">Advanced 🚀</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="notes">Notes (optional)</label>
+          <textarea id="notes" rows="3" placeholder="Any notes about this skill..."></textarea>
+        </div>
+        <button type="submit">Add Skill</button>
+      </form>
+    </section>
+
+    
+    <section class="filter-section">
+      <label for="filter">Filter by Level:</label>
+      <select id="filter">
+        <option value="All">All</option>
+        <option value="Beginner">Beginner</option>
+        <option value="Intermediate">Intermediate</option>
+        <option value="Advanced">Advanced</option>
+      </select>
+    </section>
+
+    
+    <section class="skills-display">
+      <h2>📝 Your Skills</h2>
+      <div id="skill-list" class="skill-list">
+        
+      </div>
+    </section>
+  </main>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
